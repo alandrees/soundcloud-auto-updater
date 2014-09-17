@@ -194,7 +194,7 @@ class SoundcloudAutoUpdater():
                             track = { 'title'        : self._title,
                                       'genre'        : self._genre,
                                       'tag_list'     : self._soundcloud_tags,
-                                      'downloadable' : downloadable
+                                      'downloadable' : downloadable,
                                       'sharing'      : 'public',
                                       'asset_data'   : open(temp_file, 'rb')
                                       })
