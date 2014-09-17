@@ -277,7 +277,7 @@ class SoundcloudAutoUpdater():
         except:
             print self._directory + "/" + self._file_queue[0] + " is not a valid PCM file."
         else:
-            print int(math.ceil( float( wf.getnframes() ) / float( wf.getframerate() ) ))
+            return int(math.ceil( float( wf.getnframes() ) / float( wf.getframerate() ) ))
 
     def _update_account_time(self):
         """
