@@ -12,7 +12,7 @@ Soundcloud Auto Uploader
 
 Process a directory and upload the music in it to a soundcloud account, reading the filename to parse metadata (for both the file and soundcloud).
 
-Copyright (C) 2013 Alan Drees
+Copyright (C) 2013-2014 Alan Drees
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
