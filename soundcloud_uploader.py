@@ -315,13 +315,12 @@ class SoundcloudAutoUpdater():
         for tag in tagsplit:
             self._add_sc_tag_to_list(tag)
 
-        metatag_split = data[3].split(',')
+        if(data[3].trim() != ''):
+            metatag_split = data[3].split(',')
 
-        
-
-        for tag in metatag_split:
-            metatag = tag.split(':')
-            self._meta_tags[metatag[0].strip()] = metatag[1].strip()
+            for tag in metatag_split:
+                metatag = tag.split(':')
+                self._meta_tags[metatag[0].strip()] = metatag[1].strip()
 
         self._meta_tags['Title'] = self._title.strip()
         self._meta_tags['Genre'] = self._genre.strip()
