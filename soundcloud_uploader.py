@@ -315,7 +315,7 @@ class SoundcloudAutoUpdater():
         for tag in tagsplit:
             self._add_sc_tag_to_list(tag)
 
-        if(data[3].trim() != ''):
+        if(data[3].strip() != ''):
             metatag_split = data[3].split(',')
 
             for tag in metatag_split:
